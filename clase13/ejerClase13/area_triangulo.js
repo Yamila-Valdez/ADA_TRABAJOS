@@ -1,21 +1,20 @@
-// bloque de comentarios o DocBlock 
-/**
- * Ejercicio 1 : Área de un triángulo (función declarada)
- * @param {number} base - longitud de la base del triángulo.
- * @param {number} altura - longitud de la altura del triángulo.
- * @returns {number} El área calculada del triángulo.
- */
-
 // Pego los simbolos que no tengo a mano en el teclado de la notebook: >< {} []
 
+// Ejercicio 1: Área de un triángulo (función declarada
+//Crea una función declarada llamada calcularAreaTriangulo que reciba dos parámetros: la base y la altura de un triángulo. La función debe devolver el área del triángulo. 
+//Pista: Usa la fórmula: área = base * altura / 2
+
+//Función declarada para calcular el área de un triángulo
 function calcularAreaTriangulo(base, altura) {
-  // Fórmula que se pidio en el ejercicio: Área = (base * altura) / 2
-  const area = (base * altura) / 2;
-  return area;
+    let area = (base * altura) / 2; // Fórmula: base * altura / 2
+    return area; // Devuelve el resultado
 }
 
-// pongo un ejemplo: Base 10, Altura 5
-const base1 = 10;
-const altura1 = 5;
-const area1 = calcularAreaTriangulo(base1, altura1);
-console.log(`El área de un triángulo con base ${base1} y altura ${altura1} es: ${area1}`); // en la terminal: 25
+//Uso de la función
+const baseIngresada = 8;   // Podés pedirlo con prompt si querés
+const alturaIngresada = 5; // Podés pedirlo con prompt si querés
+
+const areaTriangulo = calcularAreaTriangulo(baseIngresada, alturaIngresada);
+
+console.log("El área del triángulo es:", areaTriangulo);
+
